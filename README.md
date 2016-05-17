@@ -5,7 +5,7 @@ Home: http://python-quantities.readthedocs.org/en/latest/
 
 Package license: BSD-3-Clauses
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: Physical quantities with units, based upon Numpy
 
@@ -69,6 +69,7 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/quantities-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/quantities-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/quantities-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/quantities-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/quantities-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/quantities-feedstock/branch/master)
