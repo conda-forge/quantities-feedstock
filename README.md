@@ -14,12 +14,15 @@ Summary: Physical quantities with units, based upon numpy.
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/quantities-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/quantities-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/quantities-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/quantities-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/quantities/badges/version.svg)](https://anaconda.org/conda-forge/quantities)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/quantities/badges/downloads.svg)](https://anaconda.org/conda-forge/quantities)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-quantities-green.svg)](https://anaconda.org/conda-forge/quantities) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/quantities.svg)](https://anaconda.org/conda-forge/quantities) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/quantities.svg)](https://anaconda.org/conda-forge/quantities) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/quantities.svg)](https://anaconda.org/conda-forge/quantities) |
 
 Installing quantities
 =====================
@@ -64,6 +67,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
