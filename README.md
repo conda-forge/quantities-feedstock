@@ -3,11 +3,11 @@ About quantities
 
 Home: http://python-quantities.readthedocs.org/en/latest/
 
-Package license: BSD 3-Clauses
+Package license: BSD-3-Clauses
 
 Feedstock license: BSD 3-Clause
 
-Summary: Physical quantities with units, based upon numpy.
+Summary: Physical quantities with units, based upon numpy
 
 
 
