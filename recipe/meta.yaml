@@ -10,14 +10,13 @@ source:
 
 build:
   number: 0
-  script: python -m pip install --no-deps .
   noarch: python
+  script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   build:
     - python
     - pip
-    - numpy
   run:
     - python
     - numpy
@@ -30,8 +29,9 @@ test:
 
 about:
   home: http://python-quantities.readthedocs.org/en/latest/
-  license: BSD 3-Clauses
-  summary: 'Physical quantities with units, based upon numpy.'
+  license: BSD-3-Clauses
+  license_file: license.rst
+  summary: 'Physical quantities with units, based upon numpy'
 
 extra:
   recipe-maintainers:
