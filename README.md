@@ -1,13 +1,15 @@
 About quantities
 ================
 
-Home: http://python-quantities.readthedocs.org/en/latest/
+Home: http://python-quantities.readthedocs.io/
 
-Package license: BSD-3-Clauses
+Package license: BSD-Protection
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/quantities-feedstock/blob/master/LICENSE.txt)
 
-Summary: Physical quantities with units, based upon numpy
+Summary: Support for physical quantities with units, based on numpy
+
+Documentation: https://pythonhosted.org/quantities/
 
 Current build status
 ====================
