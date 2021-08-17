@@ -36,7 +36,7 @@ about:
   summary: Support for physical quantities with units, based on numpy
   doc_url: https://pythonhosted.org/quantities/
   license: BSD-Protection
-  license_file: PLEASE_ADD_LICENSE_FILE
+  license_file: license.rst
 
 extra:
   recipe-maintainers:
