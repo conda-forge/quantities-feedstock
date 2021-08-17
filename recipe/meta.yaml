@@ -1,11 +1,13 @@
+{% set name = "quantities" %}
 {% set version = "0.12.5" %}
 
+
 package:
-  name: quantities
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/q/quantities/quantities-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/quantities-{{ version }}.tar.gz
   sha256: 67546963cb2a519b1a4aa43d132ef754360268e5d551b43dd1716903d99812f0
 
 build:
@@ -15,23 +17,26 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
   run:
-    - python
-    - numpy
+    - python >=3.6
 
 test:
   imports:
     - quantities
     - quantities.constants
-    - quantities.units
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
-  home: http://python-quantities.readthedocs.org/en/latest/
-  license: BSD-3-Clauses
-  license_file: license.rst
-  summary: Physical quantities with units, based upon numpy
+  home: http://python-quantities.readthedocs.io/
+  summary: Support for physical quantities with units, based on numpy
+  doc_url: https://pythonhosted.org/quantities/
+  license: BSD-Protection
+  license_file: PLEASE_ADD_LICENSE_FILE
 
 extra:
   recipe-maintainers:
