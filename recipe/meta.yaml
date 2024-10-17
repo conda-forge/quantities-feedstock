@@ -1,5 +1,5 @@
 {% set name = "quantities" %}
-{% set version = "0.16.0" %}
+{% set version = "0.16.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/quantities-{{ version }}.tar.gz
-  sha256: 211cce2d268da7e202abab5c2533ce3200ff619dd8ac2a3cd98f861b8a57c6eb
+  sha256: c9d688e8719720654187a6a83425e7d54f427d7465e03c49f3da53befd20074b
 
 build:
   number: 0
@@ -17,12 +17,12 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.9
     - setuptools
     - setuptools-scm
     - pip
   run:
-    - python >=3.8
+    - python >=3.9
     - numpy >=1.20
 
 test:
