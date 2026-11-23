@@ -3,9 +3,9 @@ About quantities-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/quantities-feedstock/blob/main/LICENSE.txt)
 
-Home: http://python-quantities.readthedocs.io/
+Home: https://pypi.org/project/quantities/
 
-Package license: BSD-Protection
+Package license: MIT
 
 Summary: Support for physical quantities with units, based on numpy
 
