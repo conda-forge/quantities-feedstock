@@ -1,0 +1,48 @@
+schema_version: 1
+
+context:
+  python_min: "3.11"
+  version: "0.17.0"
+
+package:
+  name: quantities
+  version: ${{ version }}
+
+source:
+  url: https://files.pythonhosted.org/packages/source/q/quantities/quantities-${{ version }}.tar.gz
+  sha256: 69fd1c5236b416cc524c2d512847bed509d1e78f1fcca59304bfe60f1f1d759e
+
+build:
+  number: 0
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - setuptools
+    - setuptools-scm >=7
+    - pip
+  run:
+    - python >=${{ python_min }}
+    - numpy >=2.0
+
+tests:
+  - python:
+      imports:
+        - quantities
+      pip_check: true
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
+
+about:
+  summary: Support for physical quantities with units, based on numpy
+  license: MIT
+  license_file: LICENSE
+  homepage: https://pypi.org/project/quantities/
+  documentation: https://pythonhosted.org/quantities/
+
+extra:
+  recipe-maintainers:
+    - ocefpaf
